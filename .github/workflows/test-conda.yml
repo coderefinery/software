@@ -12,6 +12,15 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
+      - name: Cache conda
+        uses: actions/cache@v1
+        env:
+          # Increase this value to reset cache if
+          # etc/example-environment.yml has not changed
+          CACHE_NUMBER: 0
+        with:
+          path: ~/conda_pkgs_dir
+          key: ${{ runner.os }}-conda-${{ env.CACHE_NUMBER }}-${{ hashFiles('environment.yml') }}
       - uses: goanpeca/setup-miniconda@v1
         with:
           auto-update-conda: true
@@ -19,16 +28,26 @@ jobs:
       - name: Conda info
         shell: bash -l {0}
         run: conda info
-      - name: Conda list
-        shell: pwsh
-        run: conda list
       - name: status
+        shell: bash -l {0}   # needed to activate conda
+        if: ${{ runner.os != 'Windows' }}
         run: |
+          set -x
+          ls ~/
           which conda
           which python
           which pip
           which pwsh || true
           pwd
           ls
+          true
       - name: Install environment.yml
-        run: conda env update -f environment.yml
+        shell: bash -l {0}
+        run: conda env update --verbose -f environment.yml
+      - shell: bash -l {0}
+        run: conda list
+      - shell: bash -l {0}
+        run: conda env export -n base
+      - name: Test packages
+        shell: bash -l {0}
+        run: bash test.sh

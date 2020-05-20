@@ -1,16 +1,16 @@
-name: base
 channels:
   - conda-forge
   - defaults
   - bioconda
 dependencies:
+  - click                # modular-type-along
   - conda
   - datrie               # needed as snakemake dependency sometimes
   - ipywidgets
   - jupyter
   - jupyterlab>2.1
   - matplotlib
-  - nano                 # nano as an editor can't hurt
+  #- nano                 # nano as an editor can't hurt - not windows
   - notebook
   - numpy
   - pandas
