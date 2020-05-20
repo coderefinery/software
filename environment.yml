@@ -3,6 +3,7 @@ channels:
   - defaults
   - bioconda
 dependencies:
+  - bash_kernel          # Not needed, possibly useful for demonstrations
   - click                # modular-type-along
   - conda
   - datrie               # needed as snakemake dependency sometimes

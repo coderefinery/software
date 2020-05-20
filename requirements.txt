@@ -1,3 +1,4 @@
+bash_kernel          # Not needed, possibly useful for demonstrations
 click                # modular-type-along
 ipywidgets
 jupyter
