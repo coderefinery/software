@@ -10,7 +10,7 @@ dependencies:
   - jupyter
   - jupyterlab>2.1
   - matplotlib
-  #- nano                 # nano as an editor can't hurt - not windows
+  #- nano                 # not built for windows
   - notebook
   - numpy
   - pandas

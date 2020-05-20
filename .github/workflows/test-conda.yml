@@ -1,3 +1,5 @@
+# Derived from https://github.com/marketplace/actions/setup-miniconda
+
 on: [push, pull_request]
 
 jobs:
@@ -19,17 +21,21 @@ jobs:
           # etc/example-environment.yml has not changed
           CACHE_NUMBER: 0
         with:
+          # ~/conda_pkgs_dir set via miniconda action
           path: ~/conda_pkgs_dir
           key: ${{ runner.os }}-conda-${{ env.CACHE_NUMBER }}-${{ hashFiles('environment.yml') }}
+      # This is the main miniconda rule
       - uses: goanpeca/setup-miniconda@v1
         with:
           auto-update-conda: true
           python-version: ${{ matrix.python-version }}
+      # A few rules to tell us th ebasic static
       - name: Conda info
+        # This `bash -l {0}` is somehow needed to activate conda...
         shell: bash -l {0}
         run: conda info
       - name: status
-        shell: bash -l {0}   # needed to activate conda
+        shell: bash -l {0}
         if: ${{ runner.os != 'Windows' }}
         run: |
           set -x
@@ -41,13 +47,16 @@ jobs:
           pwd
           ls
           true
+      # Actually install the environment
       - name: Install environment.yml
         shell: bash -l {0}
         run: conda env update --verbose -f environment.yml
+      # List installed versions
       - shell: bash -l {0}
         run: conda list
       - shell: bash -l {0}
         run: conda env export -n base
+      # Test
       - name: Test packages
         shell: bash -l {0}
         run: bash test.sh
