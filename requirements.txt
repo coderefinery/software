@@ -2,6 +2,8 @@ click                # modular-type-along
 ipywidgets
 jupyter
 jupyterlab>2.1
+jupyterlab-git
+jupyterlab-github
 matplotlib
 notebook
 numpy
