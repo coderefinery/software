@@ -1,0 +1,14 @@
+click                # modular-type-along
+ipywidgets
+jupyter
+jupyterlab>2.1
+matplotlib
+notebook
+numpy
+pandas
+pycodestyle
+pytest
+seaborn
+snakemake
+sphinx
+sphinx_rtd_theme
