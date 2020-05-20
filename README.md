@@ -1,5 +1,15 @@
 # Software environment for CodeRefinery.
 
+Software environments for CodeRefinery
+
+## Environment.yml
+
+```bash
+$ conda env update -f environment.yml
+```
+
+## mybinder.org usage
+
 This git repository is suitable for the Binder service to create a
 software environment suitable for CodeRefinery lessons.  (Note: this
 is still under development, things aren't fully installed or testyet yet.)
@@ -8,11 +18,11 @@ Note that after a few hours maximum (or a few hours of inactivity),
 all data is destroyed from here.  This is a public service, so don't
 trust this with data security.
 
-Link:  https://mybinder.org/v2/gh/coderefinery/binder-environment/master
+Link:  https://mybinder.org/v2/gh/coderefinery/software/master
 
-Link directly to terminal: https://mybinder.org/v2/gh/coderefinery/binder-environment/master?urlpath=terminals/1
+Link directly to terminal: https://mybinder.org/v2/gh/coderefinery/software/master?urlpath=terminals/1
 
-Link directly to JupyterLab: https://mybinder.org/v2/gh/coderefinery/binder-environment/master?urlpath=lab/
+Link directly to JupyterLab: https://mybinder.org/v2/gh/coderefinery/software/master?urlpath=lab/
 
 ## Admin configuration
 
