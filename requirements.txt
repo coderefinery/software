@@ -1,0 +1,17 @@
+bash_kernel          # Not needed, possibly useful for demonstrations
+click                # modular-type-along
+ipywidgets
+jupyter
+jupyterlab>2.1
+jupyterlab-git
+jupyterlab-github
+matplotlib
+notebook
+numpy
+pandas
+pycodestyle
+pytest
+seaborn
+snakemake
+sphinx
+sphinx_rtd_theme
