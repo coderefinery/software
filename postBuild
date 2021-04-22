@@ -8,7 +8,3 @@ jupyter serverextension enable --py jupyterlab_git
 
 # Github extension
 jupyter labextension install @jupyterlab/github
-
-# Bash kernel - in case used for demonstration purposes
-python -m bash_kernel.install
-
