@@ -1,3 +1,4 @@
+name: coderefinery
 channels:
   - conda-forge
   - defaults
@@ -16,6 +17,7 @@ dependencies:
   - notebook
   - numpy
   - pandas
+  - pip
   - pycodestyle
   - pytest
   - python>3.7
