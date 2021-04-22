@@ -4,26 +4,19 @@ channels:
   - defaults
   - bioconda
 dependencies:
-  - bash_kernel          # Not needed, possibly useful for demonstrations
-  - click                # modular-type-along
-  - conda
-  - datrie               # needed as snakemake dependency sometimes
+  - click
   - ipywidgets
-  - jupyter
   - jupyterlab>2.1
   - jupyterlab-git
   - matplotlib
-  #- nano                 # not built for windows
-  - notebook
   - numpy
   - pandas
-  - pip
-  - pycodestyle
   - pytest
   - python>3.7
   - seaborn
   - snakemake-minimal
   - sphinx
   - sphinx_rtd_theme
+  - pip
   - pip:
     - jupyterlab-github
