@@ -51,12 +51,9 @@ jobs:
       - name: Install environment.yml
         shell: bash -l {0}
         run: conda env update --verbose -f environment.yml
-      # List installed versions
-      - shell: bash -l {0}
-        run: conda list
-      - shell: bash -l {0}
-        run: conda env export -n base
       # Test
       - name: Test packages
         shell: bash -l {0}
-        run: bash test.sh
+        run: |
+          conda activate coderefinery
+          bash test.sh
