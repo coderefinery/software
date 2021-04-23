@@ -1,19 +1,15 @@
-# Software environment for CodeRefinery
+# Software environment for CodeRefinery workshops
 
-Conda and requirements.txt environments for CodeRefinery.  These are
-*draft* and *incomplete* - They do *not have everything*, just most of
-the Python software.  Don't use them without verifying they work (and
-then let us know if they do or don't).
-
-This page is not usable without already knowing about conda or Python
-virtualenvs.
+Environment for CodeRefinery workshops for Conda or
+Python virtual environments (this page is not usabe without already
+knowing about Conda or virtual environments).
 
 
-## environment.yml
+## environment.yml for Conda
 
-You must install and activate [Anaconda](https://www.anaconda.com/) or
+This requires installing and activating [Anaconda](https://www.anaconda.com/) or
 [miniconda](https://docs.conda.io/en/latest/miniconda.html) first.
-More information on conda environments at [its user
+More information on Conda environments at [its user
 guide](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
 
 ```bash
@@ -21,12 +17,12 @@ $ conda env update -f environment.yml
 ```
 
 
-## requirements.txt
+## requirements.txt for virtual environments
 
 To install:
 
 ```bash
-$ virtualenv coderefinery-venv/
+$ python -m venv coderefinery-venv/
 $ source coderefinery-venv/bin/activate
 $ pip install -r requirements.txt
 ```
@@ -38,22 +34,16 @@ $ source coderefinery-venv/bin/activate
 ```
 
 
-## mybinder.org usage
+## [Binder](https://mybinder.org/)
 
-This git repository is suitable for the Binder service to create a
-software environment suitable for CodeRefinery lessons.  (Note: this
-is still under development, things aren't fully installed or testyet yet.)
+This repository is suitable for the [Binder](https://mybinder.org/) service to create a
+software environment suitable for CodeRefinery lessons.
 
 Note that after a few hours maximum (or a few hours of inactivity),
 all data is destroyed from here.  This is a public service, so don't
 trust this with data security.
 
-Link:  https://mybinder.org/v2/gh/coderefinery/software/master
-
-Link directly to terminal: https://mybinder.org/v2/gh/coderefinery/software/master?urlpath=terminals/1
-
-Link directly to JupyterLab: https://mybinder.org/v2/gh/coderefinery/software/master?urlpath=lab/
-
-## Admin configuration
-
-[mybinder docs](https://mybinder.readthedocs.io/en/latest/)
+- Link: https://mybinder.org/v2/gh/coderefinery/software/main
+- Link directly to terminal: https://mybinder.org/v2/gh/coderefinery/software/main?urlpath=terminals/1
+- Link directly to JupyterLab: https://mybinder.org/v2/gh/coderefinery/software/main?urlpath=lab/
+- [Binder configuration for admins](https://mybinder.readthedocs.io/en/latest/)
