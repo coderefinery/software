@@ -18,5 +18,5 @@ dependencies:
   - sphinx=3.5.4
   - sphinx_rtd_theme=0.5.2
   - pip
-  - pip:
-    - jupyterlab-github==2.0.0
+#  - pip:
+#    - jupyterlab-github==2.0.0
