@@ -2,7 +2,7 @@ set -e
 set -x
 
 # test python version
-python -c 'import sys; assert sys.version_info.major>=3'
+python -c "import sys; assert sys.version_info.major>=3"
 
 # test imports
 python -c "import click"
