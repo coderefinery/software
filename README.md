@@ -12,7 +12,7 @@ This requires installing and activating [Anaconda](https://www.anaconda.com/) or
 More information on Conda environments at [its user
 guide](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
 
-```bash
+```console
 $ conda env update -f environment.yml
 ```
 
@@ -21,7 +21,7 @@ $ conda env update -f environment.yml
 
 To install:
 
-```bash
+```console
 $ python -m venv coderefinery-venv/
 $ source coderefinery-venv/bin/activate
 $ pip install -r requirements.txt
@@ -29,7 +29,7 @@ $ pip install -r requirements.txt
 
 To activate later:
 
-```bash
+```console
 $ source coderefinery-venv/bin/activate
 ```
 
