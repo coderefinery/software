@@ -20,5 +20,5 @@ dependencies:
   - myst-parser=0.17.0
   - sphinx-autobuild
   - pip
-#  - pip:
-#    - jupyterlab-github==3.0.1
+  - pip:
+    - jupyterlab-github==3.0.1

@@ -2,9 +2,9 @@
 
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
-# JupyterLab git extension
+# JupyterLab Git extension
 jupyter labextension install @jupyterlab/git
 jupyter serverextension enable --py jupyterlab_git
 
-# Github extension
-# not compatible with version of jupyterlab jupyter labextension install @jupyterlab/github
+# JupyterLab GitHub extension
+jupyter labextension install @jupyterlab/github
