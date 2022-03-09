@@ -17,6 +17,8 @@ dependencies:
   - snakemake-minimal=7.1.1
   - sphinx=4.4.0
   - sphinx_rtd_theme=1.0.0
+  - myst-parser=0.17.0
+  - sphinx-autobuild
   - pip
 #  - pip:
 #    - jupyterlab-github==3.0.1
