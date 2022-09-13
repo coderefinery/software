@@ -2,7 +2,6 @@ click==8.0.4
 ipywidgets==7.6.5
 jupyterlab==3.3.0
 jupyterlab-git==0.34.2
-jupyterlab-github==3.0.1
 matplotlib==3.5.1
 numpy==1.22.3
 pandas==1.4.1
