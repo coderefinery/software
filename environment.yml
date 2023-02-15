@@ -7,8 +7,8 @@ dependencies:
   - python>3.9
   - click=8.0.4
   - ipywidgets=7.6.5
-  - jupyterlab=3.3.0
-  - jupyterlab-git=0.34.2
+  - jupyterlab=3.6.1
+  - jupyterlab-git=0.41.0
   - matplotlib=3.5.1
   - numpy=1.22.3
   - nbdime=3.1.1
