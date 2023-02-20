@@ -21,4 +21,10 @@ python -c "import sphinx_rtd_theme"
 jupyter-lab --version
 pytest --version
 sphinx-build --version
+
+# Trivial snakemake
 snakemake --cores 1 --snakefile test/Snakefile
+
+# Sphinx test
+sphinx-build test/sphinx-project/ test/sphinx-project/_build/
+test -e test/sphinx-project/_build/index.html
