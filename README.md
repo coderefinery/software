@@ -1,7 +1,7 @@
 # Software environment for CodeRefinery workshops
 
 Environment for CodeRefinery workshops for Conda or
-Python virtual environments (this page is not usabe without already
+Python virtual environments (this page is not usable without already
 knowing about Conda or virtual environments).
 
 
