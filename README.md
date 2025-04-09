@@ -7,10 +7,11 @@ knowing about Conda or virtual environments).
 
 ## environment.yml for Conda
 
-This requires installing and activating [Anaconda](https://www.anaconda.com/) or
-[miniconda](https://docs.conda.io/en/latest/miniconda.html) first.
-More information on Conda environments at [its user
-guide](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
+If you are new to Conda, we recommend to start with [Miniforge]([Miniforge download
+overview](https://conda-forge.org/download/).
+
+More information on how to work with Conda environments is collected
+in [this page](https://coderefinery.github.io/installation/conda/).
 
 ```console
 $ conda env update -f environment.yml
